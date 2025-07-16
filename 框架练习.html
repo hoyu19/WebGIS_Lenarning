@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>frame</title>
+        <style>
+            body{
+                margin: 0;
+                height: 100vh;
+                background-color: #eee;
+            }
+            /* * {
+                border: 1px solid black;
+            } */
+            .flex{
+                display: flex;;
+            }
+            .ax{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .baise{
+                background-color: white;
+            }
+            .flex1{
+                flex: 1;
+            }
+            .colum {
+                flex-direction: column;
+            }
+            .mg8 {
+                margin: 8px;
+            }
+            .mgr8 {
+                margin-right: 8px;
+            }
+            .mgt8 {
+                margin-top: 8px;
+            }
+        </style>
+    </head>
+    <body class="flex">
+        <!-- 侧边栏 -->
+        <div style="width: 200px;" class="baise"></div>
+        <!-- 主体内容 -->
+         <div class="flex1 flex colum">
+            <!-- 头部栏 -->
+            <div style="height: 60px;" class="baise"></div>
+             <!-- 内容区 -->
+            <div class="flex1 flex">
+                <!-- 左区 -->
+                 <div style="flex: 3;" class="flex colum mg8">
+                    <!-- 数据区 -->
+                    <div class="flex">
+                        <!-- 数据块 -->
+                        <div style="height: 100px;" class="flex1 baise mgr8"></div>
+                        <div style="height: 100px;" class="flex1 baise mgr8"></div>
+                        <div style="height: 100px;" class="flex1 baise mgr8"></div>
+                        <div style="height: 100px;" class="flex1 baise"></div>
+                    </div>
+                     <!-- 列表区 -->
+                    <div class="flex colum">
+                        <!-- 列表项 -->
+                         <div style="height: 160px;" class="baise mgt8"></div>
+                         <div style="height: 160px;" class="baise mgt8"></div>
+                         <div style="height: 160px;" class="baise mgt8"></div>
+                    </div>
+                 </div>
+                <!-- 右区 -->
+                 <div style="flex: 1;" class="flex colum mgr8 mgt8">
+                    <!-- 提示区 -->
+                     <div style="height: 150px;" class="baise"></div>
+                    <!-- 消息区 -->
+                     <div style="height: 300px;" class="baise mgt8"></div>
+                 </div>
+            </div>
+         </div>
+    </body>
+</html>
